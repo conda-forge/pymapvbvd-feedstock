@@ -1,5 +1,5 @@
 {% set name = "pyMapVBVD" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,7 @@ requirements:
 
 test:
   imports:
-    - mapVBVD
+    - mapvbvd
 
 about:
   home: https://github.com/wexeee/pymapvbvd
