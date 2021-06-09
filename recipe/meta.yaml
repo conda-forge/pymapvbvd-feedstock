@@ -1,5 +1,5 @@
 {% set name = "pyMapVBVD" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f96888db37ce4d9b1e632a0d33f2799300ff1f8eb6782cfe232a871917fdc30d
+  sha256: ce163cd6660894f2d230f7e3e69957ef52ea83913b7054b0cd9af328c25f162f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python port of mapVBVD.'
+  summary: Python port of mapVBVD.
   description: |
     Python port of mapVBVD.
   doc_url: https://github.com/wexeee/pymapvbvd
