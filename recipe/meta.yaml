@@ -30,7 +30,7 @@ requirements:
     - numpy
     - tqdm
     - scipy
-    - pyyaml
+    - six
 
 test:
   imports:
