@@ -15,12 +15,14 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - python >=3.7
+    - pip
+    - versioneer
+    - pyyaml
   host:
     - python >=3.7
     - pip
-  build:
-    - versioneer
-    - pyyaml
   run:
     - python >=3.7
     - numpy
