@@ -18,10 +18,12 @@ requirements:
   host:
     - python >=3.7
     - pip
+  build:
+    - versioneer
+    - pyyaml
   run:
     - python >=3.7
     - numpy
-    - attrdict
     - tqdm
     - scipy
 
@@ -43,4 +45,3 @@ about:
 extra:
   recipe-maintainers:
     - wtclarke
-    - wexeee
