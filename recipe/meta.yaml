@@ -1,5 +1,5 @@
 {% set name = "pyMapVBVD" %}
-{% set version = "0.5.6" %}
+{% set version = "0.5.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bbbfe324549d59e67fdfbf733e6d33f45d1344a9233b5396e8b006daaf344792
+  sha256: c1495590a408736bcd13fe0c6034859dc1c02ccc6ea907b4720a70048b940aa5
 
 build:
   noarch: python
