@@ -25,6 +25,7 @@ requirements:
     - pip
     - pyyaml
     - versioneer
+    - setuptools
   run:
     - python >=3.9
     - numpy >=1.26
