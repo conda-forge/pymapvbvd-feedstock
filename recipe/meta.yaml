@@ -1,13 +1,13 @@
 {% set name = "pyMapVBVD" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/64/33/edcb8f481b69e72b6d14f68454472d3f3ba34f7dd3f68849aa4130df9e6c/pymapvbvd-0.6.0.tar.gz
-  sha256: 8d03b3e8fb30e5a5b309d3be79dee64b0c511297f62f0b78bc089ed1a4e21e57
+  url: https://files.pythonhosted.org/packages/06/ca/21db8a0269881444a69f9ccf9aa4a0415c50d456db914d5d0a851f5a809b/pymapvbvd-0.6.1.tar.gz
+  sha256: 1238259d9d979f35edd4ff6667467d48f4246aa98a50e17b3c4c97b2c105fbb5
 
 build:
   noarch: python
@@ -27,9 +27,9 @@ requirements:
     - versioneer
   run:
     - python >=3.9
-    - numpy
+    - numpy >=1.26
     - tqdm
-    - scipy
+    - scipy >=1.13
     - six
 
 test:
