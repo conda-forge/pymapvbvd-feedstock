@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,19 +21,21 @@ requirements:
     - versioneer
     - pyyaml
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - pyyaml
     - versioneer
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=1.26
     - tqdm
     - scipy >=1.13
     - six
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mapvbvd
 
