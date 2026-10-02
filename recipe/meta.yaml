@@ -18,21 +18,19 @@ requirements:
   build:
     - python >=3.9
     - pip
-    - versioneer
-    - pyyaml
   host:
     - python {{ python_min }}
     - pip
-    - pyyaml
-    - versioneer
-    - setuptools
+    - setuptools >=77
+    - setuptools-scm >=8
   run:
     - python >={{ python_min }}
     - numpy >=1.26
     - tqdm
     - scipy >=1.13
     - six
-
+    - matplotlib
+    - h5py
 test:
   requires:
     - python {{ python_min }}
