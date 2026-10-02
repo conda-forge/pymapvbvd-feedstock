@@ -1,17 +1,17 @@
 {% set name = "pyMapVBVD" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/06/ca/21db8a0269881444a69f9ccf9aa4a0415c50d456db914d5d0a851f5a809b/pymapvbvd-0.6.1.tar.gz
-  sha256: 1238259d9d979f35edd4ff6667467d48f4246aa98a50e17b3c4c97b2c105fbb5
+  url: https://files.pythonhosted.org/packages/92/12/835aab5795d0d63958774b83a86eaa0dcbb4c92d92641b18c3a7abdcbb7d/pymapvbvd-{{ version }}.tar.gz
+  sha256: 0968e50e334f0a79271e80e65559abd9559772789a810427b7119ef6e961c356
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
