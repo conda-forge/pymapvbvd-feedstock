@@ -29,7 +29,7 @@ requirements:
     - tqdm
     - scipy >=1.13
     - six
-    - matplotlib
+    - matplotlib-base
     - h5py
 test:
   requires:
